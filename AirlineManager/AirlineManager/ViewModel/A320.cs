@@ -8,7 +8,7 @@ namespace AirlineManager.ViewModel
 {
     class A320
     {
-        int capacity = 150;
-        //first class = 12, comfort = 18 main = 120
+        int capacity = 30;
+        //first class = 10 economy = 20
     }
 }

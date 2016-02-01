@@ -8,7 +8,20 @@ namespace AirlineManager.ViewModel
 {
     public class Boeing747 : Aircraft
     {
-        int capacity = 467;
+        new int capacity = 30;
+        // first = 10 economy = 20
+        new double range = 9206.4;
 
+        public string maintenance()
+        {
+            if (status == true)
+            {
+                return "Ready";
+            }
+            else
+            {
+                return "Under Maintenance";
+            }
+        }
     }
 }

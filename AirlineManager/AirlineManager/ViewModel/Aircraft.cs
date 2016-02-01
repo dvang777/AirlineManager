@@ -8,9 +8,10 @@ namespace AirlineManager.ViewModel
 {
     public class Aircraft
     {
-        int capacity;
-        double range;
-        bool status;
+        public int capacity;
+        public double range;
+        public bool status;
         DateTime schedule;
+
     }
 }
