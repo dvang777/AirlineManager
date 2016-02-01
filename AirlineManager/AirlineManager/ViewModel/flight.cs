@@ -6,20 +6,19 @@ using System.Threading.Tasks;
 
 namespace AirlineManager.ViewModel
 {
-    class Flight
+    public class Flight
     {
-        string assignedAircraft;
-        int flightNumber;
-        string origin;
-        string destination;
-        string[] passenger;
+        public string assignedAircraft;
+        public int flightNumber;
+        public string origin;
+        public string destination;
+        public string[] passenger;
+        public int time;
+        public int miles;
 
         public void addPassengerInfo()
         {
-            for (int i = 0; i < 30; i++)
-            {
-                
-            }
+            
         }
     }
 }
