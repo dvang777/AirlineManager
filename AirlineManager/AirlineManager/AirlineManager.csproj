@@ -63,6 +63,7 @@
     <Compile Include="ViewModel\FileWrite.cs" />
     <Compile Include="ViewModel\Flight.cs" />
     <Compile Include="ViewModel\MD90.cs" />
+    <Compile Include="ViewModel\Passenger.cs" />
     <Compile Include="ViewModel\SellSeat.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

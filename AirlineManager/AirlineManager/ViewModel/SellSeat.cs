@@ -9,8 +9,7 @@ namespace AirlineManager.ViewModel
     public class SellSeat
     {
         int firstClassPrice;
-        int businessPrice;
-        int coachPrice;
+        int economyPrice;
         string passangerInfo;
 
         public bool[] seats;
@@ -19,20 +18,20 @@ namespace AirlineManager.ViewModel
 
         public void Seats()
         {
-            seats = new bool[10]; //number of seats is 10
+            seats = new bool[31]; //number of seats is 30
             string selectedClass = ""; //input of which class to select first or economy
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 30; i++)
             {
                 seats[i] = false;
             }
-            for (int i = 1; i <= 10; i++)
+            for (int i = 1; i <= 30; i++)
             {
                 // Have user select first class or economy;
             }
             if(selectedClass == "First Class")//1 is userinput 1 is first class, 2 is economy
             {
-                if (totalAssignedFirstClass == 5 && totalAssingedEconomyClass < 5)//total seats 10, 5 first, 5 econ
+                if (totalAssignedFirstClass == 10 && totalAssingedEconomyClass < 20)//total seats 30, 10 first, 20 econ
                 {
 
                 }
@@ -52,7 +51,7 @@ namespace AirlineManager.ViewModel
             while (noDouble)
             {
                 noDouble = true; //if seats avaialble
-                index = rand.Next(1, 5); // it'll randomize a seat between 1-5 or whatever range we want
+                index = rand.Next(1, 10); // it'll randomize a seat between 1-10 or whatever range we want
                 if(seats[index] == true)
                 {
                     noDouble = false;

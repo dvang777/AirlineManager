@@ -12,10 +12,14 @@ namespace AirlineManager.ViewModel
         int flightNumber;
         string origin;
         string destination;
+        string[] passenger;
 
-        public void addPassenger()
+        public void addPassengerInfo()
         {
-
+            for (int i = 0; i < 30; i++)
+            {
+                
+            }
         }
     }
 }
