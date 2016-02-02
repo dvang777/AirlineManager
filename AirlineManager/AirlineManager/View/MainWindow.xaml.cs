@@ -22,6 +22,7 @@ namespace AirlineManager
     {
         public MainWindow()
         {
+            
             InitializeComponent();
         }
     }

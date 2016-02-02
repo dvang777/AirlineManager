@@ -8,17 +8,17 @@ namespace AirlineManager.ViewModel
 {
     public class Flight
     {
-        public string assignedAircraft;
-        public int flightNumber;
-        public string origin;
-        public string destination;
+        public string AssignedAircraft { get; set; }
+        public int FlightNumber { get; set; }
+        public string Origin { get; set; }
+        public string Destination { get; set; }
         public string[] passenger;
-        public int time;
-        public int miles;
+        public int Time { get; set; }
+        public int Distance { get; set; }
 
-        public void addPassengerInfo()
-        {
+        //public void addPassengerInfo()
+        //{
             
-        }
+        //}
     }
 }

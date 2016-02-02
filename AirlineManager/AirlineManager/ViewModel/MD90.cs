@@ -8,9 +8,16 @@ namespace AirlineManager.ViewModel
 {
     public class MD90 : Aircraft
     {
-        int capapcity = 30;
-        int firstClass = 10;
-        int economy = 30;
+        int firstClass;
+        int economy;
+
+        public MD90()
+        {
+            capacity = 30;
+            firstClass = 10;
+            economy = 20;
+            range = 2722;
+        }
 
         // Milwaukee to SFO 1,843 miles 3hrs 41 mins
         // SFO to Phoenix 651 miles 1hr 44 mins

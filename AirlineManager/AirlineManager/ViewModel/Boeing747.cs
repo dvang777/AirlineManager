@@ -8,10 +8,16 @@ namespace AirlineManager.ViewModel
 {
     public class Boeing747 : Aircraft
     {
-        new int capacity = 30;
-        int firstClass = 10;
-        int economyclass = 20;
-        new double range = 9206.4;
+        int firstClass;
+        int economyclass;
+
+        public Boeing747()
+        {
+            capacity = 30;
+            firstClass = 10;
+            economyclass = 20;
+            range = 2831;
+        }
 
         // Milwaukee to Atlanta 671 miles 1hr 46mins
         // Atlanta to Dallas 721 miles 1hr 48mins

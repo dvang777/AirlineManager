@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AirlineManager.ViewModel
 {
-    class FileWrite
+    public class FileWrite
     {
     }
 }

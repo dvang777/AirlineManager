@@ -62,21 +62,12 @@
     <Compile Include="ViewModel\FileRead.cs" />
     <Compile Include="ViewModel\FileWrite.cs" />
     <Compile Include="ViewModel\Flight.cs" />
-    <Compile Include="ViewModel\FlightNumber001.cs" />
-    <Compile Include="ViewModel\FlightNumber002.cs" />
-    <Compile Include="ViewModel\FlightNumber003.cs" />
-    <Compile Include="ViewModel\FlightNumber004.cs" />
-    <Compile Include="ViewModel\FlightNumber005.cs" />
-    <Compile Include="ViewModel\FlightNumber006.cs" />
-    <Compile Include="ViewModel\FlightNumber007.cs" />
-    <Compile Include="ViewModel\FlightNumber008.cs" />
-    <Compile Include="ViewModel\FlightNumber009.cs" />
-    <Compile Include="ViewModel\FlightNumber010.cs" />
-    <Compile Include="ViewModel\FlightNumber011.cs" />
+    <Compile Include="ViewModel\FlightPlan.cs" />
+    <Compile Include="ViewModel\FlightSchedule.cs" />
     <Compile Include="ViewModel\MD90.cs" />
     <Compile Include="ViewModel\Passenger.cs" />
     <Compile Include="ViewModel\SellSeat.cs" />
-    <Page Include="MainWindow.xaml">
+    <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -84,7 +75,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -118,7 +109,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
-    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
