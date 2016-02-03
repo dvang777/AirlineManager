@@ -8,8 +8,8 @@ namespace AirlineManager.ViewModel
 {
     public class SellSeat
     {
-        int firstClassPrice; //2000
-        int economyPrice; //800
+        int firstClassPrice; //700
+        int economyPrice; //300
         string passangerInfo;
 
         public bool[] seats;
@@ -29,14 +29,12 @@ namespace AirlineManager.ViewModel
             {
                 // Have user select first class or economy;
             }
-            if(selectedClass == "First Class")//1 is userinput 1 is first class, 2 is economy
+            if(selectedClass == "First Class")
             {
                 if (totalAssignedFirstClass == 10 && totalAssingedEconomyClass < 20)//total seats 30, 10 first, 20 econ
                 {
-
-                }
                     //"First Class is full, do you want to fly economy?" can do the same reverse for economy
-
+                }
             }
             else if(totalAssignedFirstClass < 10)
             {
