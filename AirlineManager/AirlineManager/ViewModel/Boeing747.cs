@@ -19,11 +19,6 @@ namespace AirlineManager.ViewModel
             range = 2831;
         }
 
-        // Milwaukee to Atlanta 671 miles 1hr 46mins
-        // Atlanta to Dallas 721 miles 1hr 48mins
-        // Dallas to Denver 662 miles 1hr 19mins
-        // Denver to Milwaukee 777 miles 2hr 12 mins
-
         public string maintenance()
         {
             if (status == true)
