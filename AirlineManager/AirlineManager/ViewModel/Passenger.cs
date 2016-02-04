@@ -10,14 +10,11 @@ namespace AirlineManager.ViewModel
     {
         public string[] firstName = new string[15] { "Matt", "John", "David", "Dan", "Aimee", "Jessica", "Cathy", "Mary", "Tony", "Chang", "Michael", "Wendy", "Aaron", "Emmit", "Terrance" };
         public string [] lastName = new string[15] { "Jackson", "Marion", "Johnson", "Rodgers", "Lee", "Gretzky", "Jordan", "Smith", "Johnson", "Franklin", "Williams", "Vang", "Nguyen", "Mayer", "Lopez" };
-        public int? age;
         public string[] email = new string[4] { " @yahoo.com", " @gmail.com", " @hotmail.com", " @aol.com" };
-        public string country;
-        public string phoneNumber;
         public string [] birthMonth = new string[12] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
         public int birthDay;
         public int birthYear;
-        public string[] passengers;
+
 
         public void Person()
         {

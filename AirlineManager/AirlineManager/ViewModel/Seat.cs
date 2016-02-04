@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace AirlineManager.ViewModel
 {
-    public class FlightSchedule
+    public class Seat
     {
-        FlightPlan plan = new FlightPlan();
-
-        public void scheduledFlights()
+        public Seat(string s, string a)
         {
-            Flight flight = new Flight();
 
-        }
-        
+        } 
     }
 }

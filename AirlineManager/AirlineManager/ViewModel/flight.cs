@@ -15,6 +15,8 @@ namespace AirlineManager.ViewModel
         public string[] passenger;
         public int Time { get; set; }
         public int Distance { get; set; }
+        public DateTime departure { get; set; }
+        public DateTime arrival { get; set; }
 
         //public void addPassengerInfo()
         //{

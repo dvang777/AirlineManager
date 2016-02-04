@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="201" Margin="29,24,0,0" VerticalAlignment="Top" Width="189" SelectionChanged="listBox_SelectionChanged"/>
     </Grid>
 </Window>

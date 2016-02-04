@@ -55,10 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Customer.cs" />
     <Compile Include="ViewModel\A320.cs" />
     <Compile Include="ViewModel\Aircraft.cs" />
     <Compile Include="ViewModel\Airline.cs" />
     <Compile Include="ViewModel\Boeing747.cs" />
+    <Compile Include="ViewModel\CustomerRepository.cs" />
     <Compile Include="ViewModel\FileRead.cs" />
     <Compile Include="ViewModel\FileWrite.cs" />
     <Compile Include="ViewModel\Flight.cs" />
@@ -66,6 +68,7 @@
     <Compile Include="ViewModel\FlightSchedule.cs" />
     <Compile Include="ViewModel\MD90.cs" />
     <Compile Include="ViewModel\Passenger.cs" />
+    <Compile Include="ViewModel\Seat.cs" />
     <Compile Include="ViewModel\SeatChart.cs" />
     <Compile Include="ViewModel\SellSeat.cs" />
     <Page Include="View\MainWindow.xaml">
@@ -108,9 +111,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

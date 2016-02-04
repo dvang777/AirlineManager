@@ -14,8 +14,8 @@ namespace AirlineManager.ViewModel
         public Boeing747()
         {
             capacity = 30;
-            firstClass = 10;
-            economyclass = 20;
+            firstClass = 9;
+            economyclass = 21;
             range = 2831;
         }
 
