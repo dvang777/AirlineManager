@@ -72,6 +72,7 @@
     <Compile Include="ViewModel\Seat.cs" />
     <Compile Include="ViewModel\SeatChart.cs" />
     <Compile Include="ViewModel\SellSeat.cs" />
+    <Compile Include="ViewModel\ViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

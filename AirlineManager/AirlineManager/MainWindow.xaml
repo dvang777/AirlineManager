@@ -11,9 +11,8 @@
         <ViewModel:FlightPlan/>
     </Window.DataContext>
 
-
     <Grid>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="271" Margin="589,38,0,0" VerticalAlignment="Top" Width="340" ItemsSource="{Binding FlightList}" >
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="271" Margin="508,32,0,0" VerticalAlignment="Top" Width="340" ItemsSource="{Binding FlightList}" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
@@ -30,6 +29,16 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <ComboBox  x:Name="cbx" HorizontalAlignment="Left" Margin="42,32,0,0" VerticalAlignment="Top" Width="155" Height="26" DataContext="{Binding FlightList}" DisplayMemberPath="Binding Path = " >
+            <ComboBoxItem Name ="boxItem1" Content="Flight 001" DataContext="{Binding /FlightNumber}"/>
+            <ComboBoxItem DataContext="{Binding /FlightNumber}">Flight 002</ComboBoxItem>
+            <ComboBoxItem>Flight 003</ComboBoxItem>
+            <ComboBoxItem>Flight 004</ComboBoxItem>
+            <ComboBoxItem>Flight 005</ComboBoxItem>
+            <ComboBoxItem>Flight 006</ComboBoxItem>
+            <ComboBoxItem>Flight 007</ComboBoxItem>
+            
+        </ComboBox>
 
     </Grid>
 </Window>

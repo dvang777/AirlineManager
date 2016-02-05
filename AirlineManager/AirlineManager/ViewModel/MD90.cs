@@ -8,8 +8,14 @@ namespace AirlineManager.ViewModel
 {
     public class MD90 : Aircraft
     {
-        int firstClass;
-        int economy;
+        public int firstClass;
+        public int economy;
+        public string origin;
+        public string destination;
+        public string mins;
+        public string distance;
+        public DateTime departure;
+        public DateTime arrival;
 
         public MD90()
         {
@@ -17,6 +23,12 @@ namespace AirlineManager.ViewModel
             firstClass = 10;
             economy = 20;
             range = 2722;
+            origin = "Milwaukee, WI";
+            destination = "San Francisco, CA";
+            mins = "221 mins";
+            distance = "1843 miles";
+            departure = DateTime.Now.AddHours(2);
+            arrival = DateTime.Now.AddHours(4);
         }
 
         // Milwaukee to SFO 1,843 miles 3hrs 41 mins

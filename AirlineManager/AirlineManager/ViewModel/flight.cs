@@ -12,7 +12,6 @@ namespace AirlineManager.ViewModel
         public string FlightNumber { get; set; }
         public string Origin { get; set; }
         public string Destination { get; set; }
-        public string[] passenger;
         public string Time { get; set; }
         public string Distance { get; set; }
         public DateTime departure { get; set; }

@@ -8,11 +8,11 @@ namespace AirlineManager.ViewModel
 {
     public class SeatChart
     {
-        public List<Seat> SeatConfig;
+        public List<Seat> SeatConfig { get; set; }
         public string[] SeatLetter;
         public string[] SeatNumber;
 
-        public void SeatMap()
+        public SeatChart()
         {
             SeatLetter = new string[3] { "A", "B", "C" };
             SeatNumber = new string[10] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };

@@ -14,9 +14,9 @@ namespace AirlineManager.ViewModel
         public string [] birthMonth = new string[12] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
         public int birthDay;
         public int birthYear;
-        public List<NewPassenger> addPassenger;
+        public List<NewPassenger> addPassenger { get; set; }
 
-        public void Person()
+        public Passenger()
         {
             
             Random rand = new Random();

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using AirlineManager.ViewModel;
 
 namespace AirlineManager
 {
@@ -26,5 +27,10 @@ namespace AirlineManager
             InitializeComponent();
         }
 
+        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBoxItem boxItem1 = ((sender as ComboBox).SelectedItem as ComboBoxItem);
+            MessageBox.Show("Origin: Milwauke, WI.  Destination: San Fransisco, WI");
+        }
     }
 }

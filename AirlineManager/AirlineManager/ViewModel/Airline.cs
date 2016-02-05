@@ -11,12 +11,24 @@ namespace AirlineManager.ViewModel
         SeatChart seatRes = new SeatChart();
         Passenger passenger = new Passenger();
         A320 a320 = new A320();
-        public int seatAvailable;
+        public double seatAvailable;
+        public double firstClass;
+        public double econClass;
+        public double firstClassPrice;
+        public double econPrice;
 
-        public void removeSeat()
+        public void seatsLeft()
         {
             seatAvailable = seatRes.SeatConfig.Count - passenger.addPassenger.Count;
             
+        }
+        public void sellSeat()
+        {
+            firstClass = seatAvailable * .3;
+            econClass = seatAvailable * .7;
+
+
+
         }
     }
 }
