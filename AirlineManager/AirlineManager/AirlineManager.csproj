@@ -67,6 +67,7 @@
     <Compile Include="ViewModel\FlightPlan.cs" />
     <Compile Include="ViewModel\FlightSchedule.cs" />
     <Compile Include="ViewModel\MD90.cs" />
+    <Compile Include="ViewModel\NewPassenger.cs" />
     <Compile Include="ViewModel\Passenger.cs" />
     <Compile Include="ViewModel\Seat.cs" />
     <Compile Include="ViewModel\SeatChart.cs" />

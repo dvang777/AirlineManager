@@ -13,7 +13,7 @@
 
 
     <Grid>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="271" Margin="586,56,0,0" VerticalAlignment="Top" Width="340" ItemsSource="{Binding FlightList}" >
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="271" Margin="589,38,0,0" VerticalAlignment="Top" Width="340" ItemsSource="{Binding FlightList}" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>

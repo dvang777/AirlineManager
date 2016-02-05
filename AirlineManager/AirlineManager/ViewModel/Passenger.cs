@@ -14,10 +14,11 @@ namespace AirlineManager.ViewModel
         public string [] birthMonth = new string[12] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
         public int birthDay;
         public int birthYear;
-
+        public List<NewPassenger> addPassenger;
 
         public void Person()
         {
+            
             Random rand = new Random();
             string Fname;
             string last;
@@ -34,15 +35,9 @@ namespace AirlineManager.ViewModel
                 month = birthMonth[rand.Next(12)];
                 date = rand.Next(1, 30);
                 year = rand.Next(1970, 2010);
-                Console.WriteLine("{0} {1}" + " email: {0}{1}{2}" + " birthday {3} {4}, {5}", Fname, last, eMail, month, date, year);
+                NewPassenger newPassenger = new NewPassenger(Fname, last, eMail, month, date, year);
+                addPassenger.Add(newPassenger);
             }
-        }
-        public void addPerson(string FirstName, string LastName, string EMail, string Month, string Day, string Year)
-        {
-            Passenger passenger = new Passenger();
-            
-            
-
         }
     }
 }
