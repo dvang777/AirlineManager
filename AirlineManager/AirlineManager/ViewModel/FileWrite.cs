@@ -9,22 +9,24 @@ namespace AirlineManager.ViewModel
 {
     public class FileWrite
     {
-        public class FileWriter
+        //void WriteToFile()
+        //{
+        //    FileStream myWriter = new FileStream("Manifest.txt", FileMode.Append);
+        //    StreamWriter sw = new StreamWriter(myWriter);
+        //    sw.WriteLine("PassengerName");
+        //    sw.Close();
+        //}
+        public void writeFlightA320(string one)
         {
-            void WriteToFile()
-            {
-                FileStream myWriter = new FileStream("Manifest.txt", FileMode.Append);
-                StreamWriter sw = new StreamWriter(myWriter);
-                sw.WriteLine("PassengerName");
-                sw.Close();
-            }
+            File.AppendAllText(@"..\..\manifestA320.txt", one + Environment.NewLine);
         }
-        //FileStream myWriter = new FileStream("Manifest.txt", FileMode.OpenOrCreate);// StreamReader opens up Values.txt, create new, sucks in data into our program
-        //StreamWriter sw = new StreamWriter(myWriter);
-        ////creates empty string called "line' variable"
-        //sw.WriteLine("PassengerName");
-        //sw.Close();
-
-        //myWriter.Close();
+        public void writeFlightBoeing(string one)
+        {
+            File.AppendAllText(@"..\..\manifestBoeing.txt", one + Environment.NewLine);
+        }
+        public void writeFlightMD90(string one)
+        {
+            File.AppendAllText(@"..\..\manifestMD90.txt", one + Environment.NewLine);
+        }
     }
 }

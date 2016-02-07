@@ -10,7 +10,6 @@ namespace AirlineManager.ViewModel
     {
         SeatChart seatRes = new SeatChart();
         Passenger passenger = new Passenger();
-        A320 a320 = new A320();
         public double seatAvailable;
         public double firstClass;
         public double econClass;
@@ -26,9 +25,6 @@ namespace AirlineManager.ViewModel
         {
             firstClass = seatAvailable * .3;
             econClass = seatAvailable * .7;
-
-
-
         }
     }
 }

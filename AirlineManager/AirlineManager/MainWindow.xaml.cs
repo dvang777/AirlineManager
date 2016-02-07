@@ -21,16 +21,30 @@ namespace AirlineManager
     /// </summary>
     public partial class MainWindow : Window
     {
+        Viewmodel view = new Viewmodel();
         public MainWindow()
         {
             
             InitializeComponent();
         }
 
-        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+
+        private void button3_Click(object sender, RoutedEventArgs e)
         {
-            ComboBoxItem boxItem1 = ((sender as ComboBox).SelectedItem as ComboBoxItem);
-            MessageBox.Show("Origin: Milwauke, WI.  Destination: San Fransisco, WI");
+            textBox3.Text = view.Boeing747();
+            textBox3a.Text = view.BoeingTicketSales();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            textBox2.Text = view.A320();
+            textBox2a.Text = view.A320ticketSales();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            textBox1.Text = view.MD90();
+            textBox1a.Text = view.MD90TicketSales();
         }
     }
 }

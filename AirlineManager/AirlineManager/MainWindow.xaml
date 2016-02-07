@@ -8,37 +8,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="469.658" Width="955.769">
     <Window.DataContext>
-        <ViewModel:FlightPlan/>
+        <ViewModel:Viewmodel/>
     </Window.DataContext>
 
-    <Grid>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="271" Margin="508,32,0,0" VerticalAlignment="Top" Width="340" ItemsSource="{Binding FlightList}" >
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Text="{Binding FlightNumber}" />
-                        <TextBlock Text="{Binding AssignedAircraft}"/>
-                        <TextBlock Text="{Binding Origin}"/>
-                        <TextBlock Text="{Binding Destination}"/>
-                        <TextBlock Text="{Binding departure}"/>
-                        <TextBlock Text="{Binding arrival}"/>
-                        <TextBlock Text="{Binding Time}"/>
-                        <TextBlock Text="{Binding Distance}"/>
 
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <ComboBox  x:Name="cbx" HorizontalAlignment="Left" Margin="42,32,0,0" VerticalAlignment="Top" Width="155" Height="26" DataContext="{Binding FlightList}" DisplayMemberPath="Binding Path = " >
-            <ComboBoxItem Name ="boxItem1" Content="Flight 001" DataContext="{Binding /FlightNumber}"/>
-            <ComboBoxItem DataContext="{Binding /FlightNumber}">Flight 002</ComboBoxItem>
-            <ComboBoxItem>Flight 003</ComboBoxItem>
-            <ComboBoxItem>Flight 004</ComboBoxItem>
-            <ComboBoxItem>Flight 005</ComboBoxItem>
-            <ComboBoxItem>Flight 006</ComboBoxItem>
-            <ComboBoxItem>Flight 007</ComboBoxItem>
-            
-        </ComboBox>
+    <Grid>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="142" Margin="634,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
+        <Button x:Name="button3" Content="Button" HorizontalAlignment="Left" Margin="720,42,0,0" VerticalAlignment="Top" Width="76" Click="button3_Click"/>
+        <Button x:Name="button2" Content="Button" HorizontalAlignment="Left" Margin="436,42,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.1,0.45" Click="button2_Click"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="142" Margin="349,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="142" Margin="43,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
+        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="128,42,0,0" VerticalAlignment="Top" Width="74" Click="button1_Click"/>
+        <TextBox x:Name="textBox1a" HorizontalAlignment="Left" Height="108" Margin="43,272,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="textBox2a" HorizontalAlignment="Left" Height="108" Margin="349,272,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="textBox3a" HorizontalAlignment="Left" Height="108" Margin="634,272,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
 
     </Grid>
 </Window>

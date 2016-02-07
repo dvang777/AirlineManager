@@ -8,16 +8,26 @@ namespace AirlineManager.ViewModel
 {
     public class A320 : Aircraft
     {
-        int firstClass;
-        int economyClass;
-
-        public A320()
+        
+        public A320(string flightNo, int fClass, int econ, string orig, string dest, string minutes, string dist, DateTime depart, DateTime arrive)
         {
-            capacity = 30;
-            firstClass = 10;
-            economyClass = 20;
-            range = 3954;
+            aircraft = "Airbus A320";
+            flightNumber = "F002";
+            capacity = 70;
+            firstClass = 20;
+            economy = 50;
+            origin = "Milwaukee, WI";
+            destination = "Newark, NJ";
+            mins = "87 mins";
+            distance = "725 miles";
+            departure = DateTime.Now.AddHours(2.5);
+            arrival = DateTime.Now.AddHours(4);
+            airplaneStatus = "On Time.";
         }
-
+        public override string ToString()
+        {
+            return "Flight Number: " + flightNumber + Environment.NewLine + "Aircraft: " + aircraft + Environment.NewLine + "First Class Capacity: " + firstClass + Environment.NewLine + "Economy Class Capacity: " + economy + Environment.NewLine + "Origin: " + origin + Environment.NewLine + "Destination: " + departure + Environment.NewLine + "Distance(miles): " + distance + Environment.NewLine + "Time(minutes): " + mins + Environment.NewLine + "Departure Time: " + departure + Environment.NewLine + "Expected Time of Arrival: " + arrival + Environment.NewLine + "Airplane Status: " + airplaneStatus;
+        }
     }
 }
+
