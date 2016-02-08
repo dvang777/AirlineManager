@@ -50,7 +50,7 @@ namespace AirlineManager.ViewModel
             totalEcon = econPrice * a.economy;
             totalSold = totalFirstClass + totalEcon;
             seatsAvail = (a.firstClass + a.economy) - a.capacity;
-            return ("First Class Price $" + firstClassPrice + Environment.NewLine + "Economy Class Price $" + econPrice + Environment.NewLine + "Total tickets Sold " + a.capacity + Environment.NewLine + "Total Revenue $" + totalSold + Environment.NewLine + "Seats Available: " + seatsAvail);
+            return ("First Class Price $" + firstClassPrice + Environment.NewLine + "Economy Class Price $" + econPrice + Environment.NewLine + "Total tickets Sold " + a.capacity + Environment.NewLine + "Total Sales $" + totalSold + Environment.NewLine + "Seats Available: " + seatsAvail);
         }
         public string BoeingTicketSales()
         {
@@ -74,7 +74,7 @@ namespace AirlineManager.ViewModel
             econTotal = econPrice * b.economy;
             totalSold = firstClassTotal + econTotal;
             seatsAvail = (b.firstClass + b.economy) - b.capacity;
-            return ("First Class Price $" + firstClassPrice + Environment.NewLine + "Economy Class Price $" + econPrice + Environment.NewLine + "Total Tickets Sold " + b.capacity + Environment.NewLine + "Total Revenue $" + totalSold + Environment.NewLine + "Seats Available: " + seatsAvail);
+            return ("First Class Price $" + firstClassPrice + Environment.NewLine + "Economy Class Price $" + econPrice + Environment.NewLine + "Total Tickets Sold " + b.capacity + Environment.NewLine + "Total Sales $" + totalSold + Environment.NewLine + "Seats Available: " + seatsAvail);
         }
         public string MD90TicketSales()
         {
@@ -98,7 +98,7 @@ namespace AirlineManager.ViewModel
             econTotal = econPrice * m.economy;
             totalSold = firstClassTotal + econTotal;
             seatsAvail = (m.firstClass + m.economy) - m.capacity;
-            return ("First Class Price $" + firstClassPrice + Environment.NewLine + "Economy Class Price $" + econPrice + Environment.NewLine + "Total Tickets Sold " + m.capacity + Environment.NewLine + "Total Revenue $" + totalSold + Environment.NewLine + "Seats Available: " + seatsAvail);
+            return ("First Class Price $" + firstClassPrice + Environment.NewLine + "Economy Class Price $" + econPrice + Environment.NewLine + "Total Tickets Sold " + m.capacity + Environment.NewLine + "Total Sales $" + totalSold + Environment.NewLine + "Seats Available: " + seatsAvail);
         }
     }
 }
