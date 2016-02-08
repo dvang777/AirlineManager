@@ -38,7 +38,7 @@ namespace AirlineManager.ViewModel
             Passenger aPassenger = new Passenger();
             int i = 0;
 
-            while(i < a320.capacity)
+            while (i < a320.capacity)
             {
                 write.writeFlightA320(aPassenger.passengerInfo().ToString());
                 read.readFlightA320();
@@ -62,7 +62,7 @@ namespace AirlineManager.ViewModel
             int totalSold;
             int i = 0;
 
-            while(i< b.capacity)
+            while (i < b.capacity)
             {
                 write.writeFlightBoeing(bPassenger.passengerInfo().ToString());
                 read.readFlightBoeing();
@@ -86,7 +86,7 @@ namespace AirlineManager.ViewModel
             int totalSold;
             int i = 0;
 
-            while(i < m.capacity)
+            while (i < m.capacity)
             {
                 write.writeFlightMD90(mPassenger.passengerInfo().ToString());
                 read.readFlightMD90();
@@ -99,7 +99,5 @@ namespace AirlineManager.ViewModel
             totalSold = firstClassTotal + econTotal;
             return ("First Class Price $" + firstClassPrice + Environment.NewLine + "Economy Class Price $" + econPrice + Environment.NewLine + "Total Tickets Sold " + m.capacity + Environment.NewLine + "Total Revenue $" + totalSold);
         }
-
-        
     }
 }

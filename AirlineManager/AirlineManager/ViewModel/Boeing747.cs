@@ -8,8 +8,6 @@ namespace AirlineManager.ViewModel
 {
     public class Boeing747 : Aircraft
     {
-
-
         public Boeing747(string flightNo, int fClass, int econ, string orig, string dest, string minutes, string dist, DateTime depart, DateTime arrive)
         {
             aircraft = "Boeing 747";

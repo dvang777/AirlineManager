@@ -27,20 +27,16 @@ namespace AirlineManager
             
             InitializeComponent();
         }
-
-
         private void button3_Click(object sender, RoutedEventArgs e)
         {
             textBox3.Text = view.Boeing747();
             textBox3a.Text = view.BoeingTicketSales();
         }
-
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             textBox2.Text = view.A320();
             textBox2a.Text = view.A320ticketSales();
         }
-
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             textBox1.Text = view.MD90();

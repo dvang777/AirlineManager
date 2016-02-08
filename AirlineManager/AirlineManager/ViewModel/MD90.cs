@@ -25,13 +25,7 @@ namespace AirlineManager.ViewModel
         }
         public override string ToString()
         {
-            return "Flight Number: " + flightNumber + Environment.NewLine + "Aircraft: " + aircraft + Environment.NewLine + "First Class Capacity: " + firstClass + Environment.NewLine + "Economy Class Capacity: " + economy + Environment.NewLine + "Origin: " + origin + Environment.NewLine + "Destination: " + departure +  Environment.NewLine + "Distance(miles): " + distance + Environment.NewLine + "Time(minutes): " + mins + Environment.NewLine + "Departure Time: " + departure + Environment.NewLine + "Expected Time of Arrival: " + arrival + Environment.NewLine + "Airplane Status: " + airplaneStatus;
+            return "Flight Number: " + flightNumber + Environment.NewLine + "Aircraft: " + aircraft + Environment.NewLine + "First Class Capacity: " + firstClass + Environment.NewLine + "Economy Class Capacity: " + economy + Environment.NewLine + "Origin: " + origin + Environment.NewLine + "Destination: " + departure + Environment.NewLine + "Distance(miles): " + distance + Environment.NewLine + "Time(minutes): " + mins + Environment.NewLine + "Departure Time: " + departure + Environment.NewLine + "Expected Time of Arrival: " + arrival + Environment.NewLine + "Airplane Status: " + airplaneStatus;
         }
-
-        // Milwaukee to SFO 1,843 miles 3hrs 41 mins
-        // SFO to Phoenix 651 miles 1hr 44 mins
-        // Phoenix to Milwaukee 1460 miles 3 hrs 16 mins 
-
-
     }
 }

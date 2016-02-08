@@ -20,6 +20,5 @@ namespace AirlineManager.ViewModel
         public DateTime departure;
         public DateTime arrival;
         public string airplaneStatus;
-
     }
 }
