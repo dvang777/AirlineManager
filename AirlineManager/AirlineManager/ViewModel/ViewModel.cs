@@ -33,23 +33,25 @@ namespace AirlineManager.ViewModel
             int totalFirstClass;
             int totalEcon;
             int totalSold;
+            int seatsAvail;
 
-            A320 a320 = new A320("", 0, 0, "", "", "", "", DateTime.Now, DateTime.Now);
+            A320 a = new A320("", 0, 0, "", "", "", "", DateTime.Now, DateTime.Now);
             Passenger aPassenger = new Passenger();
             int i = 0;
 
-            while (i < a320.capacity)
+            while (i < a.capacity)
             {
                 write.writeFlightA320(aPassenger.passengerInfo().ToString());
                 read.readFlightA320();
                 i++;
             }
             firstClassPrice = 500;
-            totalFirstClass = firstClassPrice * a320.firstClass;
+            totalFirstClass = firstClassPrice * a.firstClass;
             econPrice = 250;
-            totalEcon = econPrice * a320.economy;
+            totalEcon = econPrice * a.economy;
             totalSold = totalFirstClass + totalEcon;
-            return ("First Class Price $" + firstClassPrice + Environment.NewLine + "Economy Class Price $" + econPrice + Environment.NewLine + "Total tickets Sold" + a320.capacity + Environment.NewLine + "Total Revenue $" + totalSold);
+            seatsAvail = (a.firstClass + a.economy) - a.capacity;
+            return ("First Class Price $" + firstClassPrice + Environment.NewLine + "Economy Class Price $" + econPrice + Environment.NewLine + "Total tickets Sold " + a.capacity + Environment.NewLine + "Total Revenue $" + totalSold + Environment.NewLine + "Seats Available: " + seatsAvail);
         }
         public string BoeingTicketSales()
         {
@@ -61,6 +63,7 @@ namespace AirlineManager.ViewModel
             int econTotal;
             int totalSold;
             int i = 0;
+            int seatsAvail;
 
             while (i < b.capacity)
             {
@@ -73,7 +76,8 @@ namespace AirlineManager.ViewModel
             econPrice = 300;
             econTotal = econPrice * b.economy;
             totalSold = firstClassTotal + econTotal;
-            return ("First Class Price $" + firstClassPrice + Environment.NewLine + "Economy Class Price $" + econPrice + Environment.NewLine + "Total Tickets Sold " + b.capacity + Environment.NewLine + "Total Revenue $" + totalSold);
+            seatsAvail = (b.firstClass + b.economy) - b.capacity;
+            return ("First Class Price $" + firstClassPrice + Environment.NewLine + "Economy Class Price $" + econPrice + Environment.NewLine + "Total Tickets Sold " + b.capacity + Environment.NewLine + "Total Revenue $" + totalSold + Environment.NewLine + "Seats Available: " + seatsAvail);
         }
         public string MD90TicketSales()
         {
@@ -85,6 +89,7 @@ namespace AirlineManager.ViewModel
             int econTotal;
             int totalSold;
             int i = 0;
+            int seatsAvail;
 
             while (i < m.capacity)
             {
@@ -97,7 +102,8 @@ namespace AirlineManager.ViewModel
             econPrice = 200;
             econTotal = econPrice * m.economy;
             totalSold = firstClassTotal + econTotal;
-            return ("First Class Price $" + firstClassPrice + Environment.NewLine + "Economy Class Price $" + econPrice + Environment.NewLine + "Total Tickets Sold " + m.capacity + Environment.NewLine + "Total Revenue $" + totalSold);
+            seatsAvail = (m.firstClass + m.economy) - m.capacity;
+            return ("First Class Price $" + firstClassPrice + Environment.NewLine + "Economy Class Price $" + econPrice + Environment.NewLine + "Total Tickets Sold " + m.capacity + Environment.NewLine + "Total Revenue $" + totalSold + Environment.NewLine + "Seats Available: " + seatsAvail);
         }
     }
 }
