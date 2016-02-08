@@ -16,7 +16,6 @@ namespace AirlineManager.ViewModel
                 {
                     read.ReadToEnd();
                     read.Close();
-                    read.Dispose();
                 }
             }
         public void readFlightBoeing()
@@ -26,7 +25,6 @@ namespace AirlineManager.ViewModel
             {
                 read.ReadToEnd();
                 read.Close();
-                read.Dispose();
             }
         }
         public void readFlightMD90()
@@ -36,7 +34,6 @@ namespace AirlineManager.ViewModel
             {
                 read.ReadToEnd();
                 read.Close();
-                read.Dispose();
             }
         }
     }
