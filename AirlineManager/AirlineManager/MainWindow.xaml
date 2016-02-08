@@ -7,21 +7,45 @@
         xmlns:ViewModel="clr-namespace:AirlineManager.ViewModel" x:Class="AirlineManager.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="469.658" Width="955.769">
+    <Window.Background>
+        <ImageBrush ImageSource="Image_Air/bluesky.jpg"/>
+    </Window.Background>
     <Window.DataContext>
         <ViewModel:Viewmodel/>
     </Window.DataContext>
 
 
     <Grid>
-        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="142" Margin="634,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
-        <Button x:Name="button3" Content="Button" HorizontalAlignment="Left" Margin="720,42,0,0" VerticalAlignment="Top" Width="76" Click="button3_Click"/>
-        <Button x:Name="button2" Content="Button" HorizontalAlignment="Left" Margin="436,42,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.1,0.45" Click="button2_Click"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="142" Margin="349,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="142" Margin="43,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
-        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="128,42,0,0" VerticalAlignment="Top" Width="74" Click="button1_Click"/>
-        <TextBox x:Name="textBox1a" HorizontalAlignment="Left" Height="108" Margin="43,272,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
-        <TextBox x:Name="textBox2a" HorizontalAlignment="Left" Height="108" Margin="349,272,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
-        <TextBox x:Name="textBox3a" HorizontalAlignment="Left" Height="108" Margin="634,272,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
+
+        <Button x:Name="button3" Content="Button" HorizontalAlignment="Left" Margin="753,35,0,0" VerticalAlignment="Top" Width="55" Click="button3_Click" Height="54" ToolTip="Click Here For Flight F003 Information">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Image_Air/airplane_button.jpg" Stretch="Uniform"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="button2" Content="Button" HorizontalAlignment="Left" Margin="445,34,0,0" VerticalAlignment="Top" Width="56" Click="button2_Click" Height="55" ToolTip="Click Here For Flight F002 Information">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Image_Air/airplane_button.jpg" Stretch="Uniform"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="146,35,0,0" VerticalAlignment="Top" Width="55" Click="button1_Click" Height="54" ToolTip="Click Here For Flight F001 Information">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Image_Air/airplane_button.jpg" Stretch="Uniform"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="167" Margin="650,100,0,0" TextWrapping="Wrap" Text="Flight F003 Itinerary" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="167" Margin="349,100,0,0" TextWrapping="Wrap" Text="Flight F002 Itinerary" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="167" Margin="43,100,0,0" TextWrapping="Wrap" Text="Flight F001 Itinerary" VerticalAlignment="Top" Width="250"/>
+
+        <TextBox x:Name="textBox1a" HorizontalAlignment="Left" Height="108" Margin="43,294,0,0" TextWrapping="Wrap" Text="Flight F001 Sales" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="textBox2a" HorizontalAlignment="Left" Height="108" Margin="349,294,0,0" TextWrapping="Wrap" Text="Flight F002 Sales" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="textBox3a" HorizontalAlignment="Left" Height="108" Margin="650,294,0,0" TextWrapping="Wrap" Text="Flight F003 Sales" VerticalAlignment="Top" Width="250"/>
 
     </Grid>
 </Window>

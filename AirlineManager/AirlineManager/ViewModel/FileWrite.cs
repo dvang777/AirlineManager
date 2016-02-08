@@ -9,17 +9,17 @@ namespace AirlineManager.ViewModel
 {
     public class FileWrite
     {
-        public void writeFlightA320(string one)
+        public void writeFlightA320(string a)
         {
-            File.AppendAllText(@"..\..\manifestA320.txt", one + Environment.NewLine);
+            File.AppendAllText(@"..\..\manifestA320.txt", a + Environment.NewLine);
         }
-        public void writeFlightBoeing(string one)
+        public void writeFlightBoeing(string b)
         {
-            File.AppendAllText(@"..\..\manifestBoeing.txt", one + Environment.NewLine);
+            File.AppendAllText(@"..\..\manifestBoeing.txt", b + Environment.NewLine);
         }
-        public void writeFlightMD90(string one)
+        public void writeFlightMD90(string m)
         {
-            File.AppendAllText(@"..\..\manifestMD90.txt", one + Environment.NewLine);
+            File.AppendAllText(@"..\..\manifestMD90.txt", m + Environment.NewLine);
         }
     }
 }

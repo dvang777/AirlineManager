@@ -37,13 +37,12 @@ namespace AirlineManager.ViewModel
 
             A320 a = new A320("", 0, 0, "", "", "", "", DateTime.Now, DateTime.Now);
             Passenger aPassenger = new Passenger();
-            int i = 0;
+            
 
-            while (i < a.capacity)
+            for (int i = 0; i < a.capacity;  i++)
             {
                 write.writeFlightA320(aPassenger.passengerInfo().ToString());
                 read.readFlightA320();
-                i++;
             }
             firstClassPrice = 500;
             totalFirstClass = firstClassPrice * a.firstClass;
@@ -62,14 +61,12 @@ namespace AirlineManager.ViewModel
             int econPrice;
             int econTotal;
             int totalSold;
-            int i = 0;
             int seatsAvail;
 
-            while (i < b.capacity)
+            for (int i = 0; i < b.capacity; i++)
             {
                 write.writeFlightBoeing(bPassenger.passengerInfo().ToString());
                 read.readFlightBoeing();
-                i++;
             }
             firstClassPrice = 600;
             firstClassTotal = firstClassPrice * b.firstClass;
@@ -88,14 +85,12 @@ namespace AirlineManager.ViewModel
             int econPrice;
             int econTotal;
             int totalSold;
-            int i = 0;
             int seatsAvail;
 
-            while (i < m.capacity)
+            for (int i = 0;  i < m.capacity; i++)
             {
                 write.writeFlightMD90(mPassenger.passengerInfo().ToString());
                 read.readFlightMD90();
-                i++;
             }
             firstClassPrice = 400;
             firstClassTotal = firstClassPrice * m.firstClass;
