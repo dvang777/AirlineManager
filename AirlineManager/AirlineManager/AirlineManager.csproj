@@ -55,23 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Model\Customer.cs" />
     <Compile Include="ViewModel\A320.cs" />
     <Compile Include="ViewModel\Aircraft.cs" />
-    <Compile Include="ViewModel\Airline.cs" />
     <Compile Include="ViewModel\Boeing747.cs" />
-    <Compile Include="ViewModel\CustomerRepository.cs" />
     <Compile Include="ViewModel\FileRead.cs" />
     <Compile Include="ViewModel\FileWrite.cs" />
-    <Compile Include="ViewModel\Flight.cs" />
-    <Compile Include="ViewModel\FlightPlan.cs" />
-    <Compile Include="ViewModel\FlightSchedule.cs" />
     <Compile Include="ViewModel\MD90.cs" />
-    <Compile Include="ViewModel\NewPassenger.cs" />
     <Compile Include="ViewModel\Passenger.cs" />
-    <Compile Include="ViewModel\Seat.cs" />
-    <Compile Include="ViewModel\SeatChart.cs" />
-    <Compile Include="ViewModel\SellSeat.cs" />
     <Compile Include="ViewModel\Viewmodel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -114,6 +104,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Model\" />
     <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

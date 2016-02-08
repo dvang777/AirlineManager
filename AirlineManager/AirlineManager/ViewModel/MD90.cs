@@ -21,10 +21,11 @@ namespace AirlineManager.ViewModel
             distance = "1843 miles";
             departure = DateTime.Now.AddHours(2);
             arrival = DateTime.Now.AddHours(4);
+            airplaneStatus = "On Time.";
         }
         public override string ToString()
         {
-            return "Flight Number: " + flightNumber + Environment.NewLine + "Aircraft: " + aircraft + Environment.NewLine + "First Class Capacity: " + firstClass + Environment.NewLine + "Economy Class Capacity: " + economy + Environment.NewLine + "Origin: " + origin + Environment.NewLine + "Destination: " + departure +  Environment.NewLine + "Distance(miles): " + distance + Environment.NewLine + "Time(minutes): " + mins + Environment.NewLine + "Departure Time: " + departure + Environment.NewLine + "Expected Time of Arrival: " + arrival;
+            return "Flight Number: " + flightNumber + Environment.NewLine + "Aircraft: " + aircraft + Environment.NewLine + "First Class Capacity: " + firstClass + Environment.NewLine + "Economy Class Capacity: " + economy + Environment.NewLine + "Origin: " + origin + Environment.NewLine + "Destination: " + departure +  Environment.NewLine + "Distance(miles): " + distance + Environment.NewLine + "Time(minutes): " + mins + Environment.NewLine + "Departure Time: " + departure + Environment.NewLine + "Expected Time of Arrival: " + arrival + Environment.NewLine + "Airplane Status: " + airplaneStatus;
         }
 
         // Milwaukee to SFO 1,843 miles 3hrs 41 mins
